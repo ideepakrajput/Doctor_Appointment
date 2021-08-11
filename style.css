@@ -28,7 +28,7 @@ ul li a{
 ul li a:hover,.login-btn:hover,.singup-btn:hover
 {
     color: var(--primary-color);
-    background-color: white;
+    background-color:var(--white);
     padding: 6px 12px;
     border-radius: 5px;
 }
@@ -39,13 +39,13 @@ ul li a:hover,.login-btn:hover,.singup-btn:hover
 .login-btn,.singup-btn{
     position: relative;
     right:-40vw;
-    color: white;
+    color:var(--white);
 }
 .form-control{
     margin: 5px 0;
 }
 #loginform,#signupform{
-    margin: 10vh 30vw  0 30vw;
+    margin: 0vh 25vw  0 25vw;
     background-image: url(/home1.jpg);
 }
 form{
@@ -58,6 +58,33 @@ form{
 }
 .formerror{
     color: var(--error);
+}
+.footer{
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+}
+.foot-h{
+    padding: 15px 0 10px 0;
+    margin-top: 15px;
+}
+.footer a{
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+.footer a:hover{
+    box-sizing: initial;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.icon a{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
 }
 @media only screen and (max-width:568px){
     #loginform,#signupform{
