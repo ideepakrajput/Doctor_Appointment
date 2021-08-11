@@ -59,3 +59,9 @@ form{
 .formerror{
     color: var(--error);
 }
+@media only screen and (max-width:568px){
+    #loginform,#signupform{
+        margin: 10vh 1vw 1vh 0;
+        background-image: url(/home1.jpg);
+    }
+}
