@@ -1,7 +1,8 @@
 :root{
     --primary-color: #0d6efd;
     --white: white;
-
+    --error:red;
+    
 }
 body{
     margin: 0;
@@ -42,4 +43,19 @@ ul li a:hover,.login-btn:hover,.singup-btn:hover
 }
 .form-control{
     margin: 5px 0;
+}
+#loginform,#signupform{
+    margin: 10vh 30vw  0 30vw;
+    background-image: url(/home1.jpg);
+}
+form{
+    color: var(--white);
+    margin: 10px;
+}
+.account{
+    text-align: center;
+    margin: 5px;
+}
+.formerror{
+    color: var(--error);
 }
