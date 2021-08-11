@@ -45,7 +45,7 @@ ul li a:hover,.login-btn:hover,.singup-btn:hover
     margin: 5px 0;
 }
 #loginform,#signupform{
-    margin: 0vh 25vw 0 25vw;
+    margin: 0vh 25vw 0vh 25vw;
     background-image: url(/home1.jpg);
 }
 form{
