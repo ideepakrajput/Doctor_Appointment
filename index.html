@@ -1,71 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-
-    <title>Doctor Appointment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="/index.html">LOGO</a></li>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">CONTACT US</a></li>
-            <a href="/loginform.html"><button type="button" class="login-btn btn">LOGIN</button></a>
-            <a href="/signupform.html"><button type="button" class="singup-btn btn">SIGNUP</button></a>
-        </ul>
-    </div>
-    <div class="home">
-        <img src="/home2.jpg" alt="">
-    </div>
 
-    <footer id="footer" class="footer container-fluid">
-        <div class="row d-flex justify-content-evenly">
-            <div class="col-md-4">
-                <a class="foot-h" href="/index.html">LOGO</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, fuga? Hic, magnam nesciunt
-                    dolores aspernatur suscipit, qui officiis culpa fuga doloribus inventore</p>
-                <div class="icon">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-whatsapp"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="txt">
+                    <h2>Welcome to SITE</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing <br> elit. Nihil natus maiores voluptates
+                        inventore veniam <br> sequi ullam atque fuga labore hic. Minus ratione <br>dolorem quas rem
+                        molestiae
+                        aut,</p>
                 </div>
             </div>
-            <div class="col-md-2">
-                <a class="foot-h" href="/">ABOUT US</a>
-                <a href="">Specialist</a>
-            </div>
-            <div class="col-md-2">
-                <a class="foot-h" href="/">SERVICES</a>
-                <a href="">Book an Appointment</a>
-                <a href="">Happy Costumer</a>
-            </div>
-            <div class="col-md-2">
-                <a class="foot-h" href="/">CONTACT US</a>
-                <a href="">Signup</a>
-                <a href="">Login</a>
+            <div class="col-md-5">
+                <form name="login" action="" method="get">
+                    <h3>Login to your account</h3>
+                    <hr>
+                    <label for="type">Login As</label>
+                    <select class="form-control" name="type">
+                        <option value="" disabled selected>---Select---</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="patient">Patient</option>
+                    </select>
+                    <label for="userid">User Id</label>
+                    <input class="form-control" type="text" name="userid" required placeholder="Enter user Id">
+                    <label for="password">Password</label>
+                    <input class="form-control" type="password" name="password" required
+                        placeholder="Enter password here">
+
+                    <button class="btn btn-primary mt-2 mb-2" type="submit">Login</button>
+
+                    <h5 class="account">Have you not an account ??<a href="#singupModal" data-bs-toggle="modal"
+                            data-bs-target="#singupModal">Create Account </a></h5>
+                </form>
             </div>
         </div>
-    </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="/main.js"></script>
+    </div>
+    <!-- Sinup modal -->
+    <div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Your Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Enter your name">
+                        <label for="sign-type">Login As</label>
+                        <select class="form-control" name="sign-type">
+                            <option value="" disabled selected>---Select---</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="patient">Patient</option>
+                        </select>
+                        <label for="sign-user">User Id</label>
+                        <input class="form-control" type="text" name="sign-user" placeholder="Enter user Id here">
+                        <label for="sing-email">Email</label>
+                        <input class="form-control" type="email" name="sing-email" placeholder="Enter your email here">
+                        <label for="sign-password">Password</label>
+                        <input class="form-control" type="password" name="sign-password"
+                            placeholder="Enter your password here">
+                        <label for="conf-password">Confirm Password</label>
+                        <input class="form-control" type="password" name="conf-password" id="conf-password"
+                            placeholder="Confirm your password Here">
+                        <button class="btn btn-primary" type="submit">Singup</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="bootstrap.bundle.js"></script>
 </body>
 
 </html>
